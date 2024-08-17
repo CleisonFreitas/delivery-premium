@@ -1,4 +1,13 @@
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu"
+"use client";
+
+import { 
+    NavigationMenu, 
+    NavigationMenuContent, 
+    NavigationMenuItem, 
+    NavigationMenuLink, 
+    NavigationMenuList, 
+    NavigationMenuTrigger 
+} from "../ui/navigation-menu"
 
 type BrowserMenuType = {
     menu: string;

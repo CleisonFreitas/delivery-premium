@@ -5,10 +5,9 @@ import { TemplateFooter } from './template-footer';
 
 export const LayoutFile = () => {
     return (
-        <section className="grid grid-rows-[120px_2800px_500px]">
+        <section className="grid grid-rows-[120px_2800px_500px] grid-cols-[100dvw]">
             <TemplateHeader />
-            <TemplateMain />
-            <TemplateFooter />
+            
         </section>
     );
 }
