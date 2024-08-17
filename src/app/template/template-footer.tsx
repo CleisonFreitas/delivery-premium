@@ -1,9 +1,8 @@
-"use client"
-
+"use client";
 import Image from "next/image";
 import PizzaIcon from './../../assets/pizza-icon.png';
-import { MarketStoreOptions } from "../marketstore-options/marketstore-options";
 import Link from "next/link";
+import { MarketStoreOptions } from "@/components/marketstore-options/marketstore-options";
 
 type menuOptionsType = {
     menu: string;
@@ -115,7 +114,7 @@ const LinkOptions = {
             url: '/'
         }
     ]
-}
+};
 
 const menuOptions: menuOptionsType[] = [
     {
@@ -134,10 +133,10 @@ const menuOptions: menuOptionsType[] = [
         menu: 'contact',
         linkOption: 'contactOption'
     }
-]
-export const Footer = () => {
+];
+export const TemplateFooter = () => {
     return (
-        <>
+        <footer className="row-start-3 row-end-3 bg-black flex flex-col justify-between pt-14">
             <div className="flex justify-around items-center">
                 <div className="flex flex-col items-start justify-center gap-16 h-full">
                     <Image src={PizzaIcon} alt="pizza-icon" />
@@ -170,6 +169,6 @@ export const Footer = () => {
                     </li>)}
                 </ul>
             </div>
-        </>
+        </footer>
     );
 }

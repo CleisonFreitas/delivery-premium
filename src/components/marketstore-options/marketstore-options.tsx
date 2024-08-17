@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const StoreMarketButtons = [
