@@ -16,9 +16,9 @@ export const TopMenu = () => {
             </SheetTrigger>
             <SheetContent side={'top'} className="flex flex-col gap-4">
                 <SheetHeader>
-                    <SheetTitle className="text-red-700 capitalize">delivery premium</SheetTitle>
+                    <SheetTitle className="text-red-700 capitalize text-center">delivery premium</SheetTitle>
                     <Separator className="border border-gray-300" />
-                    <SheetDescription>
+                    <SheetDescription className="text-center">
                         Checkout our options.
                     </SheetDescription>
                 </SheetHeader>
