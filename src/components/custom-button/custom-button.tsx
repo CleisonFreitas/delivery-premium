@@ -18,9 +18,9 @@ export const CustomButton = ({ variant = 'primary', sx = 'md', children , style 
     };
 
     const sizeStyles = {
-        sm: 'text-sm h-12 w-18 ',
-        md: 'text-md h-16 w-48 ',
-        lg: 'text-lg h-36 w-48 ',
+        sm: 'text-sm h-12  ',
+        md: 'text-md h-16  ',
+        lg: 'text-lg h-36  ',
     };
     const buttonStyle = variantStyles[variant]+sizeStyles[sx]+style;
     return (
