@@ -42,14 +42,14 @@ const specialOffers = [
 ];
 export const DeliveryDetails = () => {
     return (
-        <section className="flex flex-col gap-8 items-center w-[100dvw] justify-center">
+        <section className="flex flex-col gap-8 items-center w-full md:w-[70dvw] lg:w-full justify-center">
             <div className="flex flex-col items-center justify-center capitalize gap-3 text-center">
                 <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold w-full xl:w-[600px]">more than <span className="text-orange-600">10,000</span> dishes to order!</h3>
                 <p>welcome to the biggest network of food ordering & delivery</p>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-8 w-full justify-center">
-                <div className="flex flex-col md:flex-row gap-4 md:gap-2 items-center w-full px-4 justify-center">
-                    <ul className="flex gap-2 md:gap-4 w-full flex-wrap justify-around md:justify-center">
+            <div className="flex flex-col md:flex-row items-center gap-8 justify-center ">
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-2 items-center px-4 justify-center">
+                    <ul className="flex gap-2 md:gap-4 lg:gap-1 w-full flex-wrap justify-around">
                         {MainOffers.map((item, index) => (
                             <OffersImage
                                 key={index}
@@ -58,7 +58,7 @@ export const DeliveryDetails = () => {
                                 index={index} />
                             ))}
                     </ul>
-                    <div className="bg-gray-200 bg-opacity-30 flex flex-row lg:flex-col rounded-3xl p-5 sm:p-3 xl:p-10 h-44 lg:h-44 w-full">
+                    <div className="bg-gray-200 bg-opacity-30 flex flex-row lg:flex-col justify-center rounded-3xl p-5 sm:p-3 xl:p-10 h-44 lg:h-56 w-full">
                         <p className="text-lg lg:text-2xl font-medium">Find <span className="text-orange-600">deals</span>, <span className="text-green-600">free delivery</span>, and more from our restaurant partners.</p>
                         <figure className="flex justify-end items-center">
                             <Image src={DeliveryIcon} alt="delivery icon" />
@@ -66,14 +66,14 @@ export const DeliveryDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-4 md:gap-2 items-center w-full px-4 mt-4 justify-center">
-                <span className="flex flex-col gap-4 w-full text-center justify-center xl:w-[40%] px-8">
+            <div className="flex flex-col lg:flex-row gap-4 md:gap-2 items-center px-4 mt-4 justify-center">
+                <span className="flex flex-col gap-4 w-full xl:w-[750px] text-center justify-center px-8">
                     <Image src={VectorIcon} alt="vector-icon" />
-                    <p className="font-light text-lg xl:text-2xl text-justify">
+                    <p className="font-light text-xl xl:text-2xl text-justify">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
                     </p>
                 </span>
-                <ul className="flex gap-2 lg:gap-8 w-full justify-around md:justify-center flex-wrap xl:w-[40%]">
+                <ul className="flex gap-2 md:gap-8 lg:gap-12 w-full justify-around md:justify-center flex-wrap ">
                     {specialOffers.map((item, index) => (<OffersImage image={item.image} item={item.name} index={index} key={index}/>))}
                 </ul>
             </div>

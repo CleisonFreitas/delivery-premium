@@ -27,6 +27,7 @@ export const TemplateMain = () => {
                 </figure>
             </div>
             <DeliveryDetails />
+            <OrderDetails />    
         </main>
     );
 }
